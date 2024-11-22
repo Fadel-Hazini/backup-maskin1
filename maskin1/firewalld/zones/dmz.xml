@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone target="ACCEPT">
+  <short>DMZ</short>
+  <description>For computers in your demilitarized zone that are publicly-accessible with limited access to your internal network. Only selected incoming connections are accepted.</description>
+  <service name="ssh"/>
+  <service name="https"/>
+  <service name="http"/>
+  <service name="dns"/>
+  <service name="dhcp"/>
+  <port port="443" protocol="tcp"/>
+  <port port="443" protocol="udp"/>
+  <port port="21" protocol="tcp"/>
+  <port port="25" protocol="tcp"/>
+  <port port="67" protocol="udp"/>
+  <port port="68" protocol="udp"/>
+  <forward/>
+</zone>

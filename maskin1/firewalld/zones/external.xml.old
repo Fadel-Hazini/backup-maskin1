@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>External</short>
+  <description>For use on external networks. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <service name="ssh"/>
+  <service name="https"/>
+  <service name="http"/>
+  <service name="dhcp"/>
+  <port port="443" protocol="tcp"/>
+  <port port="443" protocol="udp"/>
+  <port port="53" protocol="tcp"/>
+  <port port="53" protocol="udp"/>
+  <port port="21" protocol="tcp"/>
+  <port port="25" protocol="tcp"/>
+  <port port="68" protocol="udp"/>
+  <port port="67" protocol="udp"/>
+  <masquerade/>
+  <forward-port port="80" protocol="tcp" to-port="80" to-addr="192.168.0.4"/>
+  <forward-port port="443" protocol="tcp" to-port="443" to-addr="192.168.0.4"/>
+  <forward-port port="53" protocol="udp" to-port="53" to-addr="192.168.0.2"/>
+  <forward-port port="53" protocol="tcp" to-port="53" to-addr="192.168.0.2"/>
+  <forward-port port="21" protocol="tcp" to-port="21" to-addr="192.168.0.4"/>
+  <forward-port port="21" protocol="udp" to-port="21" to-addr="192.168.0.4"/>
+  <forward-port port="25" protocol="tcp" to-port="25" to-addr="192.168.0.4"/>
+</zone>

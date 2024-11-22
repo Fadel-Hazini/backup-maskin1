@@ -1,0 +1,34 @@
+Start timestamp: 2024-11-22 02:00:01 +0100 (AIDE 0.16)
+AIDE found differences between database and filesystem!!
+
+Summary:
+  Total number of entries:	50976
+  Added entries:		3
+  Removed entries:		0
+  Changed entries:		0
+
+---------------------------------------------------
+Added entries:
+---------------------------------------------------
+
+l++++++++++++++++: /etc/systemd/system/multi-user.target.wants/sendmail.service
+l++++++++++++++++: /etc/systemd/system/multi-user.target.wants/sm-client.service
+f++++++++++++++++: /var/spool/cron/root
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/aide.db.gz
+  MD5      : 1Z5moFDb9rAXEjvshIhZIg==
+  SHA1     : 7ZVKA48gREEalMO3vvQK5qCOEDM=
+  RMD160   : gQupyu3ST35NNuADkPUX08KVwik=
+  TIGER    : aG8lIs/6QUINgtCoBuD4oyNFYRAtF6v7
+  SHA256   : vUkGjV7QngWKnYxsGuru12902oepFmVA
+             ofEWxNsfy9o=
+  SHA512   : Pim4VO5rqVR3vMxwqfJ9DlathfkMuMZz
+             jrIAjH+NFydjpXQSmZipKQ/yPsUuAKsm
+             PDcPAlaXpq14uPCepuNj3g==
+
+
+End timestamp: 2024-11-22 02:00:15 +0100 (run time: 0m 14s)
